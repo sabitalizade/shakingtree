@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    id="svg8714"
+    sodipodi:docname="Apel.svg"
+    viewBox="0 0 321.89 396.76"
+    version="1.1"
+    inkscape:version="0.48.3.1 r9886"
+  >
+  <defs
+      id="defs8716"
+    >
+    <linearGradient
+        id="linearGradient3939"
+        inkscape:collect="always"
+      >
+      <stop
+          id="stop3941"
+          style="stop-color:#804200"
+          offset="0"
+      />
+      <stop
+          id="stop3943"
+          style="stop-color:#008000"
+          offset="1"
+      />
+    </linearGradient
+    >
+    <marker
+        id="Arrow1Mend"
+        refY="0"
+        refX="0"
+        style="overflow:visible"
+        orient="auto"
+        inkscape:stockid="Arrow1Mend"
+      >
+      <path
+          id="path3880"
+          inkscape:connector-curvature="0"
+          style="stroke:#000000;stroke-width:1pt;fill-rule:evenodd"
+          transform="matrix(-.4 0 0 -.4 -4 0)"
+          d="m0 0 5-5-17.5 5 17.5 5-5-5z"
+      />
+    </marker
+    >
+    <radialGradient
+        id="radialGradient3224"
+        gradientUnits="userSpaceOnUse"
+        cy="270.62"
+        cx="249.64"
+        gradientTransform="matrix(-.77833 2.702 -2.4748 -.71478 2018.4 -157.84)"
+        r="55.879"
+        inkscape:collect="always"
+      >
+      <stop
+          id="stop3915"
+          style="stop-color:#e8ff55"
+          offset="0"
+      />
+      <stop
+          id="stop3921"
+          style="stop-color:#a1ff6b"
+          offset=".71369"
+      />
+      <stop
+          id="stop3917"
+          style="stop-color:#05ff79"
+          offset="1"
+      />
+    </radialGradient
+    >
+    <radialGradient
+        id="radialGradient3226"
+        xlink:href="#linearGradient3939"
+        gradientUnits="userSpaceOnUse"
+        cy="791.73"
+        cx="155.22"
+        gradientTransform="matrix(2.1599 .044119 -.022164 1.0851 816.62 -620.46)"
+        r="31.904"
+        inkscape:collect="always"
+    />
+    <linearGradient
+        id="linearGradient3228"
+        y2="780.12"
+        xlink:href="#linearGradient3939"
+        gradientUnits="userSpaceOnUse"
+        x2="-65.761"
+        gradientTransform="matrix(2.1604 0 0 2.6461 1314.1 -1810.4)"
+        y1="722.85"
+        x1="-66.822"
+        inkscape:collect="always"
+    />
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      fit-margin-left="0.2"
+      inkscape:zoom="1"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="134.00186"
+      inkscape:cy="139.6987"
+      inkscape:window-maximized="1"
+      showgrid="false"
+      fit-margin-right="0.2"
+      inkscape:guide-bbox="true"
+      units="cm"
+      showguides="false"
+      bordercolor="#666666"
+      inkscape:window-x="0"
+      inkscape:window-y="22"
+      fit-margin-bottom="0.2"
+      inkscape:window-width="1024"
+      inkscape:pageopacity="0.0"
+      inkscape:pageshadow="2"
+      pagecolor="#ffffff"
+      inkscape:document-units="cm"
+      inkscape:window-height="718"
+      showborder="false"
+      fit-margin-top="0.2"
+    >
+    <sodipodi:guide
+        id="guide4493"
+        position="-626.90557,276.74706"
+        orientation="1,0"
+    />
+    <sodipodi:guide
+        id="guide4495"
+        position="-590.13602,155.1247"
+        orientation="0,1"
+    />
+  </sodipodi:namedview
+  >
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(-994.6 -89.476)"
+    >
+    <path
+        id="path4776"
+        style="stroke:#000000;stroke-width:1.584px;fill:none"
+        sodipodi:revolution="4.6552663"
+        sodipodi:type="spiral"
+        d="m-226.93 1814.9c12.041 6.1835 12.561 22.572 5.4763 32.648-11.036 15.696-33.802 15.825-47.939 4.444-19.452-15.66-19.152-45.113-3.4119-63.23 20.205-23.256 56.459-22.509 78.52-2.3797 27.086 24.714 25.883 67.823 1.3475 93.811-29.202 30.931-79.198 29.268-109.1 0.3153-34.785-33.68-32.659-90.581 0.71693-124.39 38.149-38.646 101.97-36.055 139.68 1.7492 42.512 42.614 39.455 113.36-2.7813 154.97-47.075 46.381-124.75 42.857-170.26-3.8135-50.252-51.533-46.26-136.15 4.8457-185.56 55.989-54.125 147.55-49.666 200.85 5.8779 58 60.444 53.072 158.95-6.9101 216.14-64.897 61.876-170.35 56.48-231.43-7.9423-65.752-69.35-59.888-181.75 8.9745-246.72 73.801-69.63 193.15-63.296 262.01 10.007 73.508 78.252 66.706 204.55-11.039 277.3-1.5164 1.4189-3.0546 2.8143-4.6141 4.1857"
+        inkscape:export-ydpi="72"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        transform="matrix(.63105 0 0 .63154 -137.13 573.46)"
+        sodipodi:argument="-28.366228"
+        sodipodi:cy="1826.3622"
+        sodipodi:cx="-240"
+        sodipodi:t0="0.086000003"
+        sodipodi:radius="201.79198"
+        inkscape:export-xdpi="72"
+        sodipodi:expansion="1"
+    />
+    <path
+        id="path4778"
+        style="stroke:#000000;stroke-width:1px;fill:none"
+        d="m-280.27 2103.2c-6.9642 9.913-21.331 9.9945-30.252 2.8067-12.275-9.8902-12.086-28.491-2.153-39.932 12.751-14.687 35.628-14.215 49.55-1.5029 17.092 15.608 16.334 42.833 0.8503 59.246-18.428 19.534-49.978 18.484-68.848 0.199-21.951-21.27-20.61-57.206 0.45241-78.559 24.074-24.407 64.347-22.77 88.147 1.1048 26.827 26.912 24.898 71.592-1.7552 97.872-29.706 29.291-78.726 27.066-107.45-2.4085-31.712-32.545-29.193-85.985 3.0579-117.19 35.332-34.182 93.11-31.366 126.74 3.7122 36.601 38.173 33.491 100.38-4.3606 136.5-40.953 39.077-107.5 35.669-146.04-5.0161-41.493-43.797-37.792-114.78 5.6634-155.81 46.572-43.974 121.89-39.974 165.34 6.3196 46.387 49.42 42.095 129.18-6.9661 175.13-0.9569 0.8964-1.9276 1.7775-39.175-50.222-28.665-48.96-28.337-38.61-32.808-32.247z"
+        inkscape:export-ydpi="72"
+        sodipodi:nodetypes="ssssssssssssssssscs"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+    />
+    <path
+        id="path4781"
+        style="marker-end:url(#Arrow1Mend);stroke:#000000;stroke-width:4.5354;fill:none"
+        d="m-283.8 1856.3 1.198 92.324"
+        inkscape:export-ydpi="72"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+        inkscape:connector-type="polyline"
+    />
+    <path
+        id="rect5209"
+        style="stroke-linejoin:round;marker-end:url(#Arrow1Mend);color:#000000;stroke:#000000;stroke-linecap:square;marker:none;stroke-width:8.0787;fill:none"
+        d="m137.18 2144.1v32.527h-217.79v-132.94h217.79l23.504 77.386 239.28 4.0631"
+        inkscape:export-ydpi="72"
+        sodipodi:nodetypes="ccccccc"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+    />
+    <g
+        id="g5402"
+        inkscape:export-ydpi="72"
+        inkscape:export-xdpi="72"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        transform="translate(48.083 -411.54)"
+      >
+      <path
+          id="path4981"
+          style="marker-end:url(#Arrow1Mend);stroke:#000000;stroke-width:8.0787;fill:none"
+          inkscape:connector-curvature="0"
+          d="m167.22 2154.7c71.926-0.3993 143.85-0.7987 215.78-1.198"
+      />
+      <path
+          id="path5214"
+          style="stroke-linejoin:round;color:#000000;stroke:#000000;stroke-linecap:square;stroke-width:8.0787;fill:none"
+          inkscape:connector-curvature="0"
+          d="m90.51 2171v32.527h-217.79v-132.94h217.79v72.125"
+      />
+    </g
+    >
+    <path
+        id="path5410"
+        style="marker-end:url(#Arrow1Mend);stroke:#000000;stroke-width:4.5354;fill:none"
+        d="m47.128 1870.5 1.198 92.324"
+        inkscape:export-ydpi="72"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+        inkscape:connector-type="polyline"
+    />
+    <path
+        id="path3964"
+        style="marker-end:url(#Arrow1Mend);stroke:#000000;stroke-width:4.5354;fill:none"
+        d="m-713.96 1688.1c9.1667 17.226 22.592 36.128 43.621 38.466 22.292 1.5198 41.405-12.415 59.149-24.077 25.574-17.197 50.905-37.924 82.235-42.911 24.088-4.0293 48.024 7.3896 64.826 24.122 8.2041 7.8161 15.429 16.606 22.023 25.806"
+        inkscape:export-ydpi="72"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+    />
+    <path
+        id="path3967"
+        sodipodi:rx="66.5"
+        sodipodi:ry="89.5"
+        style="stroke-linejoin:round;fill-opacity:0;color:#000000;stroke:#000000;stroke-linecap:square;stroke-width:2.8346"
+        sodipodi:type="arc"
+        d="m-576 1792.9c0 49.43-29.773 89.5-66.5 89.5s-66.5-40.07-66.5-89.5 29.773-89.5 66.5-89.5 66.5 40.07 66.5 89.5z"
+        transform="translate(-924 -66.001)"
+        sodipodi:cy="1792.8622"
+        sodipodi:cx="-642.5"
+    />
+    <path
+        id="path3969"
+        style="stroke-linejoin:round;color:#000000;stroke:#000000;stroke-linecap:square;stroke-width:3.5433;fill:none"
+        d="m-784.33 1667.4-23.865 21.613-13.103 11.969 11.006 50.228-44.713-25.391-44.369 25.989 10.331-50.371-38.427-34.166 51.098-5.74 20.619-47.104 21.249 46.824 51.171 5.054"
+        inkscape:export-ydpi="72"
+        inkscape:transform-center-x="0.15715295"
+        inkscape:transform-center-y="-7.086767"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+        sodipodi:nodetypes="cccccccccccc"
+    />
+    <path
+        id="path3974"
+        style="stroke-linejoin:round;marker-end:url(#Arrow1Mend);color:#000000;stroke:#000000;stroke-linecap:square;marker:none;stroke-width:3.5433;fill:none"
+        d="m-785.04 2022-23.158 18.078-13.103 11.969 11.006 50.228-44.713-25.391-44.369 25.989 10.331-50.371-38.427-34.166 51.098-5.74 20.619-47.104 21.249 46.823 85.854 15.934c43.85 28.106 57.275 47.008 78.304 49.346 22.292 1.5197 41.405-12.415 59.149-24.077 25.574-17.198 50.905-37.925 82.235-42.911 24.088-4.029 48.024 7.3901 64.826 24.122 8.2041 7.8165 15.429 16.606 22.023 25.806"
+        inkscape:export-ydpi="72"
+        inkscape:transform-center-x="0.15715295"
+        inkscape:transform-center-y="-7.0865828"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+        sodipodi:nodetypes="ccccccccccccccccc"
+    />
+    <path
+        id="path4340"
+        style="marker-end:url(#Arrow1Mend);stroke:#000000;stroke-width:4.5354;fill:none"
+        d="m-611.9 1823.8 1.198 92.324"
+        inkscape:export-ydpi="72"
+        inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/Contoh menyambung Path1.png"
+        inkscape:connector-curvature="0"
+        inkscape:export-xdpi="72"
+        inkscape:connector-type="polyline"
+    />
+    <g
+        id="g3213"
+      >
+      <path
+          id="path4349"
+          style="stroke-linejoin:round;fill-opacity:.65116;color:#000000;stroke:#020000;stroke-linecap:square;stroke-width:.35433;fill:#00c500"
+          d="m1167.8 196.65c-1.0096 3.4958-4.5364 7.0728-8.7481 6.6562-9.4678-0.93643-24.113-17.554-43.002-23.378-6.0645-1.8699-19.268-3.2781-23.394-7.4986-18.031-18.442-29.888-27.065-33.77-37.963-2.7184-7.6331 30.331-2.4546 61.08 8.2106 33.465 11.607 48.452 51.829 47.833 53.972z"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="sssssss"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4351"
+          style="fill-opacity:.76279;stroke:#000000;stroke-width:.35433;fill:#82ff8b"
+          d="m1058.5 134.15 34.535 13.386 24.958 12.876 20.027 13.319 14.357 12.641 12.824 14.487"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="cccccc"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4353"
+          style="stroke:#000000;stroke-width:.35433;fill:none"
+          d="m1070.5 150.44c7.7785 1.158 19.007 0.96303 23.278-2.4036-0.6362-4.6552-1.2217-7.7179-5.8776-13.198l-1.1538-2.0824"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="cccc"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4355"
+          style="stroke:#000000;stroke-width:.35433;fill:none"
+          d="m1089.2 168.8c12.67-0.3291 22.044-2.5722 28.265-8.0185-0.5785-8.7376-3.786-15.738-8.0813-22.019"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="cccc"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4357"
+          style="stroke:#000000;stroke-width:.35433;fill:none"
+          d="m1134.4 189.11c6.7727-0.49528 14.428-0.35105 18.372-2.712 1.1584-5.2444 2.5622-12.186-0.3162-18.878"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="ccc"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4359"
+          style="stroke:#000000;stroke-width:.35433;fill:none"
+          d="m1110.6 178.41c8.6622 0.11162 21.893-2.2529 27.895-4.5862 0.7763-6.3152-2.0617-16.419-6.4796-25.739"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="ccc"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4361"
+          style="stroke:#020000;stroke-width:.35433;fill:url(#radialGradient3224)"
+          d="m1299.2 339.85c25.272-69.046 1.7266-145.03-61.274-138.14-19.527 2.1336-27.588-13.725-72.451 2.4528-19.382-5.7622-22.35-11.292-37.076-1.2728-32.968 22.432-52.489 2.7732-63.049 2.7854-57.757 0.0668-81.039 70.118-49.148 139.34 28.155 61.112 46.941 147.75 96.332 130.25 41.809-14.811 43.84-7.1733 70.443 1.0708 64.448 19.972 94.837-78.057 116.22-136.48z"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="sscssssss"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4363"
+          style="stroke-opacity:.98605;stroke:url(#radialGradient3226);stroke-width:.35433;fill:none"
+          d="m1072.9 224.66c60.971 55.338 136.56 9.9355 137.08 9.806"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="cc"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+      <path
+          id="path4365"
+          style="stroke:#000000;stroke-width:.35433;fill:url(#linearGradient3228)"
+          d="m1162.4 209.38c5.3556-57.79 15.046-79.604 33.781-112.61 16.01 3.6748 19.035 11.716 22.52 17.393 0 0-15.928 7.2816-21.052 14.994-14.465 21.774-21.757 79.888-21.757 79.888"
+          inkscape:export-ydpi="110.10223"
+          sodipodi:nodetypes="cccac"
+          inkscape:export-filename="/media/Pak Wid__/Data/Data/Inkscape/Uji_coba Gambar/apel_malang_edit2.png"
+          inkscape:connector-curvature="0"
+          inkscape:export-xdpi="110.10223"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
