@@ -2,7 +2,11 @@
   overflow: hidden;
   display: flex;
   .shakeTree{
-    animation: shake 3s linear ;  
+    // animation: shake 3s linear ;  
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
   }
   .container{
     width: 80%;
@@ -13,7 +17,7 @@
       position: absolute ;
       width: 415px;
       height: calc(100% / 3);
-      // background-color: red;
+      padding-top: 50px;
       height: 100vh;
       display: flex;
       overflow:hidden ;
@@ -22,8 +26,6 @@
       }
       .appleContainer{
         position: relative;
-        
-        // background-color: rgb(72, 255, 0);
         top: 80px;
         z-index: 8;
         height: 0;
@@ -57,17 +59,23 @@
     .basketContainer{
       display: flex;
       align-items: flex-end;
-      .apple{
+      justify-content: center;
+      .basketDiv{
         position: absolute;
-        width: 30px;
-        height: 30px;      
-        bottom: 9px;
-        left: 37px;
-        z-index: 9;     
+        width: 160px;
+        height: 130px;  
+        .apple{
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          z-index: 1;     
+        }
+        
       }
       .basket{
         width: 13rem;
         height: 13rem;
+        z-index: 2;
       }
     }
   }
@@ -82,66 +90,83 @@
   }
 }
 
-@keyframes shake{
-  0%{
-    transform: rotate(0deg);
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
   }
-  5%{
-    transform: rotate(0.3deg);
-  }
-  10%{
-    transform: rotate(0deg);
-  }
-  15%{
-    transform: rotate(-0.3deg);
-  }
-  20%{
-    transform: rotate(0deg);
-  }
-  25%{
-    transform: rotate(0.3deg);
-  }
-  30%{
-    transform: rotate(0deg);
-  }
-  35%{
-    transform: rotate(-0.3deg);
-  }
-  40%{
-    transform: rotate(0deg);
-  }
-  45%{
-    transform: rotate(0.3deg);
-  }
-  50%{
-    transform: rotate(0deg);
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
   }
 
-  55%{
-    transform: rotate(-0.3deg);
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
   }
-  60%{
-    transform: rotate(0deg);
-  }
-  65%{
-    transform: rotate(0.3deg);
-  }
-  75%{
-    transform: rotate(0deg);
-  }
-  80%{
-    transform: rotate(-0.3deg);
-  }
-  85%{
-    transform: rotate(0deg);
-  }
-  90%{
-    transform: rotate(0.3deg);
-  }
-  95%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(-0.3deg);
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
+
+// @keyframes shake{
+//   0%{
+//     transform: skewX(0deg);
+//   }
+//   5%{
+//     transform: skewX(0.2deg);
+//   }
+//   10%{
+//     transform: skewX(0deg);
+//   }
+//   15%{
+//     transform: skewX(-0.2deg);
+//   }
+//   20%{
+//     transform: skewX(0deg);
+//   }
+//   25%{
+//     transform: skewX(0.2deg);
+//   }
+//   30%{
+//     transform: skewX(0deg);
+//   }
+//   35%{
+//     transform: skewX(-0.2deg);
+//   }
+//   40%{
+//     transform: skewX(0deg);
+//   }
+//   45%{
+//     transform: skewX(0.2deg);
+//   }
+//   50%{
+//     transform: skewX(0deg);
+//   }
+//   55%{
+//     transform: skewX(-0.2deg);
+//   }
+//   60%{
+//     transform: skewX(0deg);
+//   }
+//   65%{
+//     transform: skewX(0.2deg);
+//   }
+//   75%{
+//     transform: skewX(0deg);
+//   }
+//   80%{
+//     transform: skewX(-0.2deg);
+//   }
+//   85%{
+//     transform: skewX(0deg);
+//   }
+//   90%{
+//     transform: skewX(0.2deg);
+//   }
+//   95%{
+//     transform: skewX(0deg);
+//   }
+//   100%{
+//     transform: skewX(-0.2deg);
+//   }
+// }

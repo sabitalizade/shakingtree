@@ -4,120 +4,122 @@ import "./App.scss";
 const initialValue = [
   {
     id: 1,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 2,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 3,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 4,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 5,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 6,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 7,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 8,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 9,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 10,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 11,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 12,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
   {
     id: 13,
-    top: Math.floor(Math.random() * 300) + 70,
-    left: Math.floor(Math.random() * 300) + 30,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
   },
 ];
 
-// const basket = [
-//   {
-//     id:2,
-//     top:Math.floor(Math.random() * 300) + 70,
-//     left:Math.floor(Math.random() * 300) + 30
-//   },
-// ]
 function App() {
   const [state, setState] = useState(initialValue);
-  const [shake, setShake] = useState(false)
-  const [basket, setBasket] = useState([])
+  const [shake, setShake] = useState(false);
+  const [basket, setBasket] = useState([]);
   console.log(basket);
   console.log(state);
   const handleShake = () => {
-    setShake(true)
+    setShake(true);
     setTimeout(() => {
-      const randomId = Math.floor(Math.random() * state.length) + 1;
+      const randomId = Math.floor(Math.random() * (state.length + basket.length)) + 1;
       // console.log(randomId)
-      state.find((item) => item.id === randomId ? setBasket([...basket,item])  : null)
-      setState( 
-         state.map((item) => item.id === randomId ? {...item,drop:true}  : item)
-      );
-      setShake(false)
+     
       setTimeout(() => {
-        setState( 
-          state.map((item) => item.id === randomId ? {...item,dNone:true}  : item)
-       );
+        state.find((item) =>
+        item.id === randomId ? setBasket([...basket, item]) : null
+      );
+      }, 2000);
+
+      setState(
+        state.map((item) =>
+          item.id === randomId ? { ...item, drop: true } : item
+        )
+      );
+      setShake(false);
+      setTimeout(() => {
+        setState(
+          state.filter((item) =>
+            item.id !== randomId 
+          )
+        );
       }, 1900);
     }, 3000);
-
-
-
   };
 
   return (
     <div className="app">
-      <div className={shake?"shakeTree container":"container"}>
+      <div className={shake ? "shakeTree container" : "container"}>
         <div className="apples">
-          {state.map((item) => (
+          {state.map((item,id) => (
             <div
-              style={{ top: item.top,display:item.dNone?"none":null }}
+              style={{ top: item.top}}
               key={item.id}
-              className={item.drop?"animation appleContainer":"appleContainer"}
+              className={
+                item.drop ? "animation appleContainer" : "appleContainer"
+              }
             >
               <img
                 style={{ left: item.left }}
                 className="apple"
-                src="./images/apple.svg"
-                alt=""
+                src="./images/apple01.svg"
+                alt={id}
               />
             </div>
           ))}
@@ -129,20 +131,20 @@ function App() {
           Shake Tree
         </button>
         <div className="basketContainer">
-          <img className="basket" src="./images/basket.png" alt="" />
-
-          {
-            basket.map((basketItem,id)=>(
-              <img
-              key={id}
-            style={{ left: `calc(37px + ${(id)*25}px  )` }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-            ))
-          }
-          
+          <img className="basket" src="./images/basket.svg" alt="" />
+           <div className="basketDiv">
+              {basket.map((basketItem, id) => (
+                <img
+                  key={id}
+                  style={{
+                    left:basketItem.left/2.3
+                  }}
+                  className="apple"
+                  src="./images/apple01.svg"
+                  alt={id}
+                />
+              ))}
+          </div>           
         </div>
       </div>
     </div>
@@ -152,44 +154,6 @@ function App() {
 export default App;
 
 
-
-
-// <img
-//             style={{ left: "calc(37px + 25px  )" }}
-//             className="apple"
-//             src="./images/apple.svg"
-//             alt=""
-//           />
-//           <img
-//             style={{ left: "calc(37px + 25px + 25px)" }}
-//             className="apple"
-//             src="./images/apple.svg"
-//             alt=""
-//           />
-//           <img
-//             style={{ left: "calc(37px + 25px + 25px + )" }}
-//             className="apple"
-//             src="./images/apple.svg"
-//             alt=""
-//           />
-//           <img
-//             style={{ left: "calc(37px + 25px + 25px + 25px )" }}
-//             className="apple"
-//             src="./images/apple.svg"
-//             alt=""
-//           />
-//           <img
-//             style={{ left: "calc(37px + 25px + 25px + 25px + 25px )" }}
-//             className="apple"
-//             src="./images/apple.svg"
-//             alt=""
-//           />
-//           <img
-//             style={{ left: "calc(37px + 25px + 25px + 25px + 25px )" }}
-//             className="apple"
-//             src="./images/apple.svg"
-//             alt=""
-//           />
 //           <img
 //             style={{
 //               left: "calc(37px + 25px + 25px + 25px + 35px )",
