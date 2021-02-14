@@ -141,51 +141,7 @@ function App() {
           />
             ))
           }
-          <img
-            style={{ left: "calc(37px + 25px  )" }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-          <img
-            style={{ left: "calc(37px + 25px + 25px)" }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-          <img
-            style={{ left: "calc(37px + 25px + 25px + )" }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-          <img
-            style={{ left: "calc(37px + 25px + 25px + 25px )" }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-          <img
-            style={{ left: "calc(37px + 25px + 25px + 25px + 25px )" }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-          <img
-            style={{ left: "calc(37px + 25px + 25px + 25px + 25px )" }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
-          <img
-            style={{
-              left: "calc(37px + 25px + 25px + 25px + 35px )",
-              bottom: "calc(9px + 25px)",
-            }}
-            className="apple"
-            src="./images/apple.svg"
-            alt=""
-          />
+          
         </div>
       </div>
     </div>
@@ -193,3 +149,52 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// <img
+//             style={{ left: "calc(37px + 25px  )" }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
+//           <img
+//             style={{ left: "calc(37px + 25px + 25px)" }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
+//           <img
+//             style={{ left: "calc(37px + 25px + 25px + )" }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
+//           <img
+//             style={{ left: "calc(37px + 25px + 25px + 25px )" }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
+//           <img
+//             style={{ left: "calc(37px + 25px + 25px + 25px + 25px )" }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
+//           <img
+//             style={{ left: "calc(37px + 25px + 25px + 25px + 25px )" }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
+//           <img
+//             style={{
+//               left: "calc(37px + 25px + 25px + 25px + 35px )",
+//               bottom: "calc(9px + 25px)",
+//             }}
+//             className="apple"
+//             src="./images/apple.svg"
+//             alt=""
+//           />
