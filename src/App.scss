@@ -1,22 +1,29 @@
 .app {
   overflow: hidden;
+  display: flex;
+  .shakeTree{
+    animation: shake 3s linear ;  
+  }
   .container{
+    width: 80%;
     display: flex;  
     justify-content: center;
     position: relative;
-    //  animation: shake 300ms linear infinite;  
     .apples{
       position: absolute ;
-      width: calc(100% / 3 + 50px);
+      width: 415px;
       height: calc(100% / 3);
       // background-color: red;
       height: 100vh;
       display: flex;
       overflow:hidden ;
+      .animation{
+        animation: dropit 2s linear ;
+      }
       .appleContainer{
         position: relative;
-        animation: dropit 5s linear infinite;
-        background-color: rgb(72, 255, 0);
+        
+        // background-color: rgb(72, 255, 0);
         top: 80px;
         z-index: 8;
         height: 0;
@@ -33,14 +40,45 @@
       height: 100vh;     
     }
   }
+  .leftSide{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    .btn{
+      border-radius: 15px;
+      padding: 15px;
+      border: none;
+      background-color: aqua;
+      margin-top: calc(100%/3);
+      outline: 0;
+    }
+    .basketContainer{
+      display: flex;
+      align-items: flex-end;
+      .apple{
+        position: absolute;
+        width: 30px;
+        height: 30px;      
+        bottom: 9px;
+        left: 37px;
+        z-index: 9;     
+      }
+      .basket{
+        width: 13rem;
+        height: 13rem;
+      }
+    }
+  }
 }
 
 @keyframes dropit{
   0%{
-    height: 0px;
+    height: 0%;
   }
   100%{
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -48,16 +86,62 @@
   0%{
     transform: rotate(0deg);
   }
+  5%{
+    transform: rotate(0.3deg);
+  }
+  10%{
+    transform: rotate(0deg);
+  }
+  15%{
+    transform: rotate(-0.3deg);
+  }
+  20%{
+    transform: rotate(0deg);
+  }
   25%{
-    transform: rotate(1deg);
+    transform: rotate(0.3deg);
+  }
+  30%{
+    transform: rotate(0deg);
+  }
+  35%{
+    transform: rotate(-0.3deg);
+  }
+  40%{
+    transform: rotate(0deg);
+  }
+  45%{
+    transform: rotate(0.3deg);
   }
   50%{
     transform: rotate(0deg);
   }
+
+  55%{
+    transform: rotate(-0.3deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  65%{
+    transform: rotate(0.3deg);
+  }
   75%{
-    transform: rotate(-1deg);
+    transform: rotate(0deg);
+  }
+  80%{
+    transform: rotate(-0.3deg);
+  }
+  85%{
+    transform: rotate(0deg);
+  }
+  90%{
+    transform: rotate(0.3deg);
+  }
+  95%{
+    transform: rotate(0deg);
   }
   100%{
-    transform: rotate(0deg);
+    transform: rotate(-0.3deg);
   }
 }
