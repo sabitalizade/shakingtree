@@ -132,9 +132,10 @@ function App() {
           <img className="basket" src="./images/basket.png" alt="" />
 
           {
-            basket.map(basketItem=>(
+            basket.map((basketItem,id)=>(
               <img
-            style={{ left: `calc(37px + ${basketItem.length*25}px  )` }}
+              key={id}
+            style={{ left: `calc(37px + ${(id)*25}px  )` }}
             className="apple"
             src="./images/apple.svg"
             alt=""
