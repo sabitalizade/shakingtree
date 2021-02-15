@@ -67,6 +67,41 @@ const initialValue = [
     top: Math.floor(Math.random() * 300) +1,
     left: Math.floor(Math.random() * 300) +1,
   },
+  {
+    id: 14,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  },
+  {
+    id: 15,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  },
+  {
+    id: 16,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  },
+  {
+    id: 17,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  },
+  {
+    id: 18,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  },
+  {
+    id: 19,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  },
+  {
+    id: 20,
+    top: Math.floor(Math.random() * 300) +1,
+    left: Math.floor(Math.random() * 300) +1,
+  }
 ];
 
 function App() {
@@ -79,20 +114,20 @@ function App() {
 useEffect(() => {
   
   var arr = [];
-  while(arr.length < 13){
-  var r = Math.floor(Math.random() * 13) + 1;
+  while(arr.length < 20){
+  var r = Math.floor(Math.random() * 20) + 1;
   if(arr.indexOf(r) === -1)  arr.push(r) ;
   }
   setarr(arr)
 }, [])
 
-  const randomAppleCount= Math.floor(Math.random() * 5) + 1
+  // const randomAppleCount= Math.floor(Math.random() * 3) + 2
   const handleShake = () => {
     setShake(true);
 
    
     setTimeout(() => {
- const randomAppleDrop = setInterval(() => {
+//  const randomAppleDrop = setInterval(() => {
         const randomId= arr.shift()
         console.log(arr);
       setShake(false);
@@ -116,11 +151,11 @@ useEffect(() => {
         );
       }, 1900);
 
-    }, 2000/1);
+    // }, 2000/1);
 
-    setTimeout(() => {
-      clearInterval(randomAppleDrop)      
-    },randomAppleCount * 1000 );
+    // setTimeout(() => {
+    //   clearInterval(randomAppleDrop)      
+    // },randomAppleCount * 1000 );
 
     }, 3000);
 
