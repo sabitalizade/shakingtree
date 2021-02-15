@@ -3,7 +3,8 @@
   display: flex;
   .shakeTree{
     // animation: shake 3s linear ;  
-    animation: shake 3s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: 3;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -15,9 +16,10 @@
     position: relative;
     .apples{
       position: absolute ;
-      width: 415px;
-      height: calc(100% / 3);
-      padding-top: 50px;
+      // background-color: aqua;
+      width: 380px;
+      height: calc(100% / 4);
+      padding-top: 100px;
       height: 100vh;
       display: flex;
       overflow:hidden ;
@@ -91,19 +93,19 @@
 }
 
 @keyframes shake {
-  5%,10%, 90%,95% {
+  10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
   
-  15%,20%, 80%,85% {
+  20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  25%,30%, 50%, 70%,75% {
+  30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  35%,40%, 60%,65% {
+  40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }

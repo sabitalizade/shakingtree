@@ -73,11 +73,31 @@ function App() {
   const [state, setState] = useState(initialValue);
   const [shake, setShake] = useState(false);
   const [basket, setBasket] = useState([]);
-  console.log(basket);
-  console.log(state);
+  // console.log(basket);
+  // console.log(state);
   const handleShake = () => {
+
+
+    var arr = [];
+    while(arr.length < 13){
+    var r = Math.floor(Math.random() * 13) + 1;
+    if(arr.indexOf(r) === -1) arr.push(r);
+    }
+    console.log(arr);
+
+
+
+
+
+
+
+
     setShake(true);
     setTimeout(() => {
+
+
+
+
       const randomId = Math.floor(Math.random() * (state.length + basket.length)) + 1;
       // console.log(randomId)
      
@@ -124,7 +144,7 @@ function App() {
             </div>
           ))}
         </div>
-        <img className="tree" src="./images/tree1.png" alt="" />
+        <img className="tree" src="./images/tree.png" alt="" />
       </div>
       <div className="leftSide">
         <button className="btn" onClick={handleShake}>
