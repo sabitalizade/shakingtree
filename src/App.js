@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
 import { useDispatch, useSelector } from "react-redux";
+import { addBasket, addDrop, filterApple } from "./actions";
 
 
 function App() {
@@ -29,14 +30,14 @@ function App() {
     console.log(arr);
   setShake(false);
 
-  dispatch({type:"ADD_DROP",payload:randomId})
+  dispatch(addDrop(randomId))
 
   setTimeout(() => {
-    dispatch({type:"FILTER_APPLE",payload:randomId})
+    dispatch(filterApple(randomId))
   }, 2100);
 
   setTimeout(() => {
-    dispatch({type:"ADD_BASKET",payload:randomId})
+    dispatch(addBasket(randomId))
   }, 2000);
  
   }
