@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 
 const initialValue = [
@@ -73,18 +73,27 @@ function App() {
   const [state, setState] = useState(initialValue);
   const [shake, setShake] = useState(false);
   const [basket, setBasket] = useState([]);
+  const [arr, setarr] = useState([]);
   // console.log(basket);
   // console.log(state);
+useEffect(() => {
+  
+  var arr = [];
+  while(arr.length < 13){
+  var r = Math.floor(Math.random() * 13) + 1;
+  if(arr.indexOf(r) === -1)  arr.push(r) ;
+  }
+  setarr(arr)
+}, [])
+
+// 
   const handleShake = () => {
 
 
-    var arr = [];
-    while(arr.length < 13){
-    var r = Math.floor(Math.random() * 13) + 1;
-    if(arr.indexOf(r) === -1) arr.push(r);
-    }
-    console.log(arr);
+ 
+    // console.log(arr);
 
+    const randomId= arr.shift()
 
 
 
@@ -94,13 +103,9 @@ function App() {
 
     setShake(true);
     setTimeout(() => {
-
-
-
-
-      const randomId = Math.floor(Math.random() * (state.length + basket.length)) + 1;
+      // const randomId = Math.floor(Math.random() * (state.length + basket.length)) + 1;
       // console.log(randomId)
-     
+      setShake(false);
       setTimeout(() => {
         state.find((item) =>
         item.id === randomId ? setBasket([...basket, item]) : null
@@ -112,7 +117,7 @@ function App() {
           item.id === randomId ? { ...item, drop: true } : item
         )
       );
-      setShake(false);
+     
       setTimeout(() => {
         setState(
           state.filter((item) =>
