@@ -74,8 +74,8 @@ function App() {
   const [shake, setShake] = useState(false);
   const [basket, setBasket] = useState([]);
   const [arr, setarr] = useState([]);
-  // console.log(basket);
-  // console.log(state);
+  console.log(basket);
+  console.log(state);
 useEffect(() => {
   
   var arr = [];
@@ -86,25 +86,15 @@ useEffect(() => {
   setarr(arr)
 }, [])
 
-// 
+  const randomAppleCount= Math.floor(Math.random() * 5) + 1
   const handleShake = () => {
-
-
- 
-    // console.log(arr);
-
-    const randomId= arr.shift()
-
-
-
-
-
-
-
     setShake(true);
+
+   
     setTimeout(() => {
-      // const randomId = Math.floor(Math.random() * (state.length + basket.length)) + 1;
-      // console.log(randomId)
+ const randomAppleDrop = setInterval(() => {
+        const randomId= arr.shift()
+        console.log(arr);
       setShake(false);
       setTimeout(() => {
         state.find((item) =>
@@ -125,7 +115,16 @@ useEffect(() => {
           )
         );
       }, 1900);
+
+    }, 2000/1);
+
+    setTimeout(() => {
+      clearInterval(randomAppleDrop)      
+    },randomAppleCount * 1000 );
+
     }, 3000);
+
+
   };
 
   return (
@@ -149,10 +148,10 @@ useEffect(() => {
             </div>
           ))}
         </div>
-        <img className="tree" src="./images/tree.png" alt="" />
+        <img className="tree" src="./images/treee.png" alt="" />
       </div>
       <div className="leftSide">
-        <button className="btn" onClick={handleShake}>
+        <button disabled={shake?true :false} className="btn" onClick={handleShake}>
           Shake Tree
         </button>
         <div className="basketContainer">
