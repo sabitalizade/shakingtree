@@ -1,165 +1,56 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
+import { useDispatch, useSelector } from "react-redux";
 
-const initialValue = [
-  {
-    id: 1,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 2,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 3,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 4,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 5,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 6,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 7,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 8,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 9,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 10,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 11,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 12,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 13,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 14,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 15,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 16,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 17,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 18,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 19,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  },
-  {
-    id: 20,
-    top: Math.floor(Math.random() * 300) +1,
-    left: Math.floor(Math.random() * 300) +1,
-  }
-];
 
 function App() {
-  const [state, setState] = useState(initialValue);
-  const [shake, setShake] = useState(false);
-  const [basket, setBasket] = useState([]);
   const [arr, setarr] = useState([]);
-  console.log(basket);
-  console.log(state);
-useEffect(() => {
+  const [shake, setShake] = useState(false);
+
+ const state = useSelector(state => state.apple)
+ const basket = useSelector(state => state.basket)
+ const dispatch = useDispatch()
+
+ console.log("state",state);
+  console.log("basket",basket);
+
+  useEffect(() => {  
+    var arr = [];
+    while(arr.length < 20){
+    var r = Math.floor(Math.random() * 20) + 1;
+    if(arr.indexOf(r) === -1)  arr.push(r) ;
+    }
+    setarr(arr)
+  }, [])
+
   
-  var arr = [];
-  while(arr.length < 20){
-  var r = Math.floor(Math.random() * 20) + 1;
-  if(arr.indexOf(r) === -1)  arr.push(r) ;
+  const handleProsses = () =>{
+    const randomId= arr.shift()
+    console.log(arr);
+  setShake(false);
+
+  dispatch({type:"ADD_DROP",payload:randomId})
+
+  setTimeout(() => {
+    dispatch({type:"FILTER_APPLE",payload:randomId})
+  }, 2100);
+
+  setTimeout(() => {
+    dispatch({type:"ADD_BASKET",payload:randomId})
+  }, 2000);
+ 
   }
-  setarr(arr)
-}, [])
 
-  // const randomAppleCount= Math.floor(Math.random() * 3) + 2
   const handleShake = () => {
-    setShake(true);
-
-   
+    setShake(true);   
     setTimeout(() => {
-//  const randomAppleDrop = setInterval(() => {
-        const randomId= arr.shift()
-        console.log(arr);
-      setShake(false);
-      setTimeout(() => {
-        state.find((item) =>
-        item.id === randomId ? setBasket([...basket, item]) : null
-      );
-      }, 2000);
 
-      setState(
-        state.map((item) =>
-          item.id === randomId ? { ...item, drop: true } : item
-        )
-      );
-     
-      setTimeout(() => {
-        setState(
-          state.filter((item) =>
-            item.id !== randomId 
-          )
-        );
-      }, 1900);
-
-    // }, 2000/1);
-
-    // setTimeout(() => {
-    //   clearInterval(randomAppleDrop)      
-    // },randomAppleCount * 1000 );
-
+    handleProsses()
+    setTimeout(() => {
+      handleProsses()
     }, 3000);
 
-
+    }, 3000);
   };
 
   return (
