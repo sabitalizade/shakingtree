@@ -43,8 +43,8 @@ function App() {
   const handleShake = () => {
     setDisable(true);
     setShake(true);
+    if (state.length === 0) return;
     setTimeout(() => {
-      if (state.length === 0) return;
       console.log("1");
       handleProsses();
       const randomLoopCount = Math.floor(Math.random() * 3) + 1;
