@@ -27,7 +27,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
               apple: state.apple.filter((item) =>
               item.id !== action.payload 
             )
-          }
+          };
     default:
       return state;
   }

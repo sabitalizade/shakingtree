@@ -17,7 +17,7 @@
     .apples {
       position: absolute;
       // background-color: aqua;
-      width: 380px;
+      width: 60%;
       height: calc(100% / 4);
       padding-top: 100px;
       height: 100vh;
@@ -33,8 +33,8 @@
         height: 0;
         .apple {
           position: absolute;
-          width: 30px;
-          height: 30px;
+          width: 5vw;
+          height: 5vh;
           bottom: 0;
           z-index: 9;
         }
@@ -84,11 +84,17 @@
 
 @keyframes dropit {
   0% {
-    height: 0%;
+    transform:translateY(0px) ;
   }
   100% {
-    height: 100%;
+    transform: translateY(100vh);
   }
+  // 0% {
+  //   height: 0%;
+  // }
+  // 100% {
+  //   height: 100%;
+  // }
 }
 
 @keyframes shake {
