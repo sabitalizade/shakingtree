@@ -8,13 +8,13 @@ function App() {
   const [shake, setShake] = useState(false);
   const [disableButtom, setDisable] = useState(false);
 
+
+  // Pull data from redux store
   const state = useSelector((state) => state.apple);
   const basket = useSelector((state) => state.basket);
   const dispatch = useDispatch();
 
-  //  console.log("state",state);
-  //   console.log("basket",basket);
-
+// create an array generated with random number
   useEffect(() => {
     var arr = [];
     while (arr.length < 20) {
@@ -24,35 +24,45 @@ function App() {
     setarr(arr);
   }, []);
 
+  // handle apple drop and add to basket  
   const handleProsses = () => {
+    // shift a number for falling an apple 
     const randomId = arr.shift();
-    // console.log(arr);
+    // set shake false for shaking stop
     setShake(false);
-
+    // dispatch apple id to addDrop action 
     dispatch(addDrop(randomId));
-
+    // wait 2 second end shaking to add apple to basket
+    setTimeout(() => {
+      dispatch(addBasket(randomId));
+    }, 2000);
+    // apple adding to basket dispatch the same apple for removing 
     setTimeout(() => {
       dispatch(filterApple(randomId));
     }, 2001);
 
-    setTimeout(() => {
-      dispatch(addBasket(randomId));
-    }, 2000);
   };
-
+ 
+  // handle when click the button shake tree and do handleProsses
   const handleShake = () => {
+    //set disable true for wait shaning end
     setDisable(true);
+    // set shaking true to shake the tree 
     setShake(true);
+    // check if all apple is over 
     if (state.length === 0) return;
+    // wait 3 secont tree shake finishing
     setTimeout(() => {
-      console.log("1");
+      // drop first apple 
       handleProsses();
+      // create random number for how many apple fall one shakeing
       const randomLoopCount = Math.floor(Math.random() * 3) + 1;
+      // check if apple count is less than random falling count  
       if (state.length < randomLoopCount) {
         return
       }else{
+        // loop apple falling for how many apple drop
         for (let i = 0; i < randomLoopCount; i++) {
-          console.log("2");
           const randomDelayCount = Math.floor(Math.random() * 3) + 1;
           setTimeout(() => {
             handleProsses();
