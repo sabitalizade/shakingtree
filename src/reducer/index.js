@@ -5,7 +5,6 @@ const INITIAL_STATE = {
   basket: [],
 };
 export const reducer = (state = INITIAL_STATE, action) => {
-  // console.log(state)
   switch (action.type) {
     case "ADD_DROP":
       return {
@@ -31,5 +30,4 @@ export const reducer = (state = INITIAL_STATE, action) => {
     default:
       return state;
   }
-  // return state
-};
+ };

@@ -10,8 +10,8 @@ function App() {
 
 
   // Pull data from redux store
-  const state = useSelector((state) => state.apple);
-  const basket = useSelector((state) => state.basket);
+  const {apple,basket} = useSelector((state) => state);
+  
   const dispatch = useDispatch();
 
 // create an array generated with random number
@@ -50,7 +50,7 @@ function App() {
     // set shaking true to shake the tree 
     setShake(true);
     // check if all apple is over 
-    if (state.length === 0) return;
+    if (apple.length === 0) return;
     // wait 3 secont tree shake finishing
     setTimeout(() => {
       // drop first apple 
@@ -58,7 +58,7 @@ function App() {
       // create random number for how many apple fall one shakeing
       const randomLoopCount = Math.floor(Math.random() * 3) + 1;
       // check if apple count is less than random falling count  
-      if (state.length < randomLoopCount) {
+      if (apple.length < randomLoopCount) {
         return
       }else{
         // loop apple falling for how many apple drop
@@ -78,7 +78,7 @@ function App() {
     <div className="app">
       <div className={shake ? "shakeTree container" : "container"}>
         <div className="apples">
-          {state.map((item, id) => (
+          {apple.map((item, id) => (
             <div
               style={{ top: `${item.top}vh` }}
               key={item.id}
@@ -127,5 +127,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
